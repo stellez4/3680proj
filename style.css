@@ -10,7 +10,7 @@ body {
 .header {
     background-color: #333333;
     color: #f4f4f4;
-    padding: 20px;
+    #padding: 20px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -20,6 +20,7 @@ body {
 }
 
 .navbar {
+    font-size: 25px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,6 +52,10 @@ p {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.active{
+    background-color: red;
 }
 
 .button {
