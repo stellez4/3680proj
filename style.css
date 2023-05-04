@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-    background-color: #333333;
+    background-color: #4d4d4d;
     color: #f4f4f4;
     #padding: 20px;
     text-align: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar li a:hover {
-    background-color: #85144b;
+    background-color: #000066;
 }
 
 h1 {
@@ -55,11 +55,11 @@ p {
 }
 
 .active{
-    background-color: red;
+    background-color: blue;
 }
 
 .button {
-    background-color: #FF4136;
+    background-color: blue;
     border: none;
     color: white;
     padding: 20px 40px;
@@ -73,5 +73,5 @@ p {
 }
 
 .button:hover {
-    background-color: #85144b;
+    background-color: #000066;
 }
