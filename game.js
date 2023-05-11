@@ -45,7 +45,7 @@ var paddleSpeed = 10;
 // Define score properties
 var leftPlayerScore = 0;
 var rightPlayerScore = 0;
-var maxScore = 10;
+var maxScore = 5;
 
 // Listen for keyboard events
 document.addEventListener("keydown", keyDownHandler);
@@ -98,13 +98,6 @@ function update() {
     leftPaddleY += paddleSpeed;
   }
 
-  // Move right paddle automatically based on ball position
-  // if (ballY > rightPaddleY + paddleHeight / 2) {
-  //   rightPaddleY += paddleSpeed;
-  // } else if (ballY < rightPaddleY + paddleHeight / 2) {
-  //   rightPaddleY -= paddleSpeed;
-  // }
-
   // Move ball
   ballX += ballSpeedX;
   ballY += ballSpeedY;
@@ -150,13 +143,6 @@ function update() {
 }
 
 function playerWin(player) {
-  var message = "Congratulations! " + player + " win!";
-  //setTimeout(() => {
-          //alert(message)
-  //}, 3000);
-  //window.alert(message);
-  //$('#message').text(message); // Set the message text
-  //$('#message-modal').modal('show'); // Display the message modal
   reset();
 }
 
@@ -207,6 +193,3 @@ function loop() {
   animationId = requestAnimationFrame(loop);
 }
 
-//$('#message-modal-close').on('click', function() {
-  //document.location.reload();
-//});
